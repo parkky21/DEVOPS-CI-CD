@@ -12,5 +12,3 @@ services:
       - /app/node_modules
     ports:
       - '8090:8090'
-    # run your dev script
-    command: npm run dev
