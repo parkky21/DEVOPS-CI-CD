@@ -1,0 +1,16 @@
+
+services:
+  app:
+    # build from your Dockerfile in the current directory
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dc-gaming
+    # mount your source code and preserve the container's node_modules
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - '8090:8090'
+    # run your dev script
+    command: npm run dev
