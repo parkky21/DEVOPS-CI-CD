@@ -31,6 +31,7 @@ pipeline{
                 sh "docker image tag gaming-vite-app:latest ${env.dockerHubUser}/gaming-vite-app:latest"
                 sh "docker push ${env.dockerHubUser}/gaming-vite-app:latest"
                 }
+
                 echo "Pushed to dockerhub !"
             }
         }
@@ -38,6 +39,7 @@ pipeline{
             steps{
                 echo "This is deploying the code"
                 sh "docker compose down && docker compose up -d --build"
+                sh "docker rm -f $(docker ps -aq)"
             }
         }
     }
