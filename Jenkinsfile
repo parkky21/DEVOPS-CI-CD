@@ -39,7 +39,6 @@ pipeline{
             steps{
                 echo "This is deploying the code"
                 sh "docker compose down && docker compose up -d --build"
-                sh "docker rm -f $(docker ps -aq)"
             }
         }
     }
