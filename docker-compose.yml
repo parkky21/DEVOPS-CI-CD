@@ -2,13 +2,10 @@
 services:
   app:
 
-#    build:
-#      context: .
-#      dockerfile: Dockerfile
-    image: "parkky21/gaming-vite-app"
+    build:
+      context: .
+      dockerfile: Dockerfile
+#    image: "parkky21/gaming-vite-app"
 
-    volumes:
-      - ./:/app
-      - /app/node_modules
     ports:
       - '8090:8090'
