@@ -4,6 +4,7 @@ services:
 #    build:
 #      context: .
 #      dockerfile: Dockerfile
+
     image: "parkky21/gaming-vite-app"
 
     ports:
