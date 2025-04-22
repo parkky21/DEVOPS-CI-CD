@@ -245,7 +245,7 @@ All files           |   92.16 |    85.37 |   89.47 |   92.04 |
 
 ### Jenkins Pipeline Execution
 
-![Jenkins Pipeline Success](https://placeholder-image.com/jenkins-success.png)
+![Screenshot 2025-04-23 004006](https://github.com/user-attachments/assets/56cccca4-7731-4b3a-a0a3-68e106b565ab)
 
 ### Docker Hub Repository
 
